@@ -41,9 +41,32 @@ ul.project-header {
   color: #5D3A2C;
 }
 
+/* Add circles around navbar items with an outline */
 ul.project-header li {
-  margin-left: 16px;
+  list-style: none;
+  padding: 0 8px; /* Adjust horizontal padding to fit text */
+  margin-left: 16px; /* Space between the items */
+  border-radius: 100px; /* Fully rounded corners with a radius of 100px */
+  color: #5D3A2C; /* Text color inside the circle */
+  background-color: transparent; /* Transparent background */
+  border: 1px solid #5D3A2C; /* Border with the desired color */
+  display: inline-flex; /* Use flexbox to align items properly */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  font-size: 10px; /* Smaller font size to fit the text in the circle */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  height: 30px; /* Circle height */
+  width: 75px; /* Circle width */
 }
+
+/* Optional hover effect */
+ul.project-header li:hover {
+  background-color: #5D3A2C; /* Change background color on hover */
+  color: #F7F1DF; /* Change text color on hover */
+  transform: scale(1.1); /* Slightly grow on hover */
+}
+
+
 
 .star-one {
   margin-left: 16px;
