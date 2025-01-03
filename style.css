@@ -387,6 +387,91 @@ h3 {
   border-top: 1px solid #DED4C2;
 }
 
+/* Links Container (Gmail and LinkedIn Icons) */
+.links-container {
+  display: inline-flex; /* Make icons appear right next to each other */
+  justify-content: center; /* Ensure the icons are centered horizontally */
+  align-items: center; /* Vertically align the icons */
+  gap: 0; /* Ensure no gap between icons */
+  margin: 20px auto; /* Optional, to center the container horizontally */
+}
+
+.link-one, .link-two {
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove padding if any */
+}
+
+.link-one img, .link-two img {
+  width: 80px; /* Ensure both icons have the same size */
+  height: 40px; /* Match the height with width */
+  object-fit: contain; /* Ensure icons don't stretch */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .link-one img, .link-two img {
+    width: 30px; /* Make the icons smaller on mobile */
+    height: 30px; /* Ensure height matches width */
+  }
+}
+
+@media (max-width: 480px) {
+  .link-one img, .link-two img {
+    width: 25px; /* Even smaller icons on very small screens */
+    height: 25px; /* Match height with width */
+  }
+}
+
+
+
+/* Connect Section - Adjusting for responsiveness */
+.connect {
+  font-family: "Courier Prime";
+  color: #5D3A2C;
+  font-size: 50px;
+  font-weight: 100;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .connect {
+    font-size: 30px; /* Smaller font size on mobile */
+    text-align: center; /* Center the text */
+    margin-left: 0; /* Reset margin */
+    margin-top: 30px; /* Reduce the margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .connect {
+    font-size: 25px; /* Even smaller font size for very small screens */
+    margin-top: 20px; /* Further reduce margin */
+  }
+}
+
+.link-two {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 300px;
+}
+
+@media (max-width: 768px) {
+  .link-two {
+    flex-direction: column; /* Stack items vertically */
+    margin-left: 0; /* Reset margin on smaller screens */
+    align-items: center; /* Center items */
+    width: 50%; /* Restrict width to 50% of the container */
+    padding: 10px; /* Add some padding to avoid the edges */
+  }
+
+  .link-two a {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin-bottom: 5px; /* Small amount of space between the links */
+  }
+}
+
 
 /* For very small screens */
 @media (max-width: 480px) {
