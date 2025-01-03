@@ -407,6 +407,10 @@ h3 {
   object-fit: contain; /* Ensure icons don't stretch */
 }
 
+.links-container a {
+  position: relative; /* Allow z-index to work */
+  z-index: 10; /* Make sure links are on top */
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
   .link-one img, .link-two img {
