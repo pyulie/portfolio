@@ -1,12 +1,12 @@
+/* General Body Styling */
 body {
-
   font-size: 16px;
   margin: 0;
   padding: 0;
   background-color: #F7F1DF;
 }
 
-
+/* Navigation Container */
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -14,13 +14,11 @@ body {
   width: 100%;
 }
 
-
 ul {
   list-style: none;
   padding: 24px;
   margin: 0;
 }
-
 
 ul.name-header {
   list-style: none;
@@ -29,13 +27,10 @@ ul.name-header {
   color: #5D3A2C;
 }
 
-
-/* Styling for <a> tags inside the <ul> */
 ul.name-header a {
   text-decoration: none;
   color: inherit;
 }
-
 
 ul.project-header {
   text-align: right;
@@ -46,12 +41,9 @@ ul.project-header {
   color: #5D3A2C;
 }
 
-
 ul.project-header li {
   margin-left: 16px;
-  /* Space out the items on the right */
 }
-
 
 .star-one {
   margin-left: 16px;
@@ -59,7 +51,6 @@ ul.project-header li {
   padding: 16px;
   display: flex;
 }
-
 
 h1 {
   margin: 16px;
@@ -71,7 +62,6 @@ h1 {
   margin-top: -10px;
 }
 
-
 h2 {
   font-family: "Space Grotesk";
   font-size: 100px;
@@ -81,7 +71,6 @@ h2 {
   margin-top: -100px;
   padding: 60px;
 }
-
 
 h3 {
   color: #5D3A2C;
@@ -93,7 +82,6 @@ h3 {
   padding: 60px;
 }
 
-
 .star-two {
   float: right;
   margin: 16px;
@@ -102,20 +90,17 @@ h3 {
   margin-top: -50px;
 }
 
-
-/* Container for the About Me section and Headshot */
+/* About Me Container */
 .about-me-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  /* Adds space between the two elements */
   background: #FEDB78;
   width: 100%;
   padding: 20px;
 }
-
 
 .headshot {
   flex: 1;
@@ -126,80 +111,64 @@ h3 {
   padding: 50px;
 }
 
-
 .about-me {
   color: #5D3A2C;
   flex: 2;
   margin-top: 0;
   font-size: 40px;
   padding: 16px;
+  margin-left: 200px;
 }
-
 
 .about-me-inner {
   max-width: 700px;
-  /* Set a max-width for the inner container */
   margin: 0 auto;
-  /* Center it within the parent container */
   padding: 0 20px;
-  /* Add horizontal padding to prevent text from touching edges */
 }
-
 
 .intro-text {
   font-size: 17px;
   line-height: 3.0;
   font-family: "Courier Prime";
+  width: 90%;
 }
-
 
 /* Responsiveness for smaller screens */
 @media (max-width: 768px) {
   .about-me-container {
     flex-direction: column;
-    /* Stack the headshot and text */
     text-align: center;
-    /* Center the text */
   }
-
 
   .headshot {
     max-width: 200px;
-    /* Adjust headshot size for smaller screens */
     margin: 16px;
   }
-
 
   .about-me {
     flex: 1;
     margin-top: 10px;
   }
 
-
   .about-me-inner {
     max-width: 90%;
-    /* Use more of the available width on smaller screens */
   }
-
 
   .intro-text {
     font-size: 16px;
   }
 }
 
-
+/* Rectangle Styling */
 .rectangle {
   width: 100%;
-  /* Make the rectangle container full width for responsiveness */
   max-width: 1150px;
-  /* Max width to avoid it becoming too large */
   height: 123px;
   background-color: #D4B694;
   border-radius: 40px;
   margin-top: 300px;
   margin-left: auto;
   margin-right: auto;
-  /* Center it horizontally */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -207,54 +176,40 @@ h3 {
   font-size: 70px;
   font-family: "Space Grotesk";
   overflow: hidden;
-  /* Hide the overflow to ensure no extra space */
 }
-
 
 .rectangle p {
   display: flex;
   animation: scrollText 20s linear infinite;
-  /* Endless scrolling */
   margin: 0;
   padding: 0;
 }
 
-
 .rectangle span {
   white-space: nowrap;
-  /* Prevent text wrapping */
   margin-right: 35px;
-  /* Add space between each repetition */
 }
 
-
-/* Keyframes for scrolling effect */
 @keyframes scrollText {
   0% {
     transform: translateX(0);
-    /* Start from the initial position */
   }
 
   100% {
     transform: translateX(-100%);
-    /* Move the entire text block off the screen */
   }
 }
-
 
 /* Styling the horizontal line */
 .line-divider {
   width: 80%;
-  /* Makes the line take 80% of the container's width */
   margin: 20px auto;
-  /* Centers the line and gives it some space from the content */
   border: 0;
   margin-top: 150px;
   border-top: 1px solid #DED4C2;
-  /* Brown color matching your theme */
 }
 
-
+/* First Project */
 .first-project {
   display: flex;
   justify-content: space-between;
@@ -264,14 +219,12 @@ h3 {
   flex-wrap: wrap;
 }
 
-
 .first-project .number {
   font-size: 70px;
   color: #93786E;
   font-family: "Space Grotesk";
   font-weight: 100;
 }
-
 
 .first-project .text {
   font-size: 50px;
@@ -280,7 +233,6 @@ h3 {
   color: #5D3A2C;
 }
 
-
 .first-project .number-right {
   font-size: 30px;
   font-family: "Space Grotesk";
@@ -288,35 +240,25 @@ h3 {
   font-weight: 50;
 }
 
-
-/* Styling for the additional text */
 .first-project .additional-text {
   font-size: 15px;
   font-family: "Courier Prime";
-  /* Example font for the additional text */
-  color: #945840;
+  color: #93786E;
   width: 100%;
-  /* Ensure it takes full width */
   text-align: center;
-  /* Center the additional text */
   margin-top: 10px;
-  /* Adds some space above the text */
   margin-right: 425px;
 }
 
-
 .line-divider-two {
   width: 80%;
-  /* Makes the line take 80% of the container's width */
   margin: 20px auto;
-  /* Centers the line and gives it some space from the content */
   border: 0;
   margin-top: 40px;
   border-top: 1px solid #DED4C2;
-  /* Brown color matching your theme */
 }
 
-
+/* Second Project */
 .second-project {
   display: flex;
   justify-content: space-between;
@@ -326,14 +268,12 @@ h3 {
   flex-wrap: wrap;
 }
 
-
 .second-project .number-two {
   font-size: 70px;
   color: #93786E;
   font-family: "Space Grotesk";
   font-weight: 100;
 }
-
 
 .second-project .text-two {
   font-size: 50px;
@@ -343,7 +283,6 @@ h3 {
   margin-right: 400px;
 }
 
-
 .second-project .number-right-two {
   font-size: 30px;
   font-family: "Space Grotesk";
@@ -351,53 +290,36 @@ h3 {
   font-weight: 50;
 }
 
-
 .second-project .additional-text-two {
   font-size: 15px;
   font-family: "Courier Prime";
-  /* Example font for the additional text */
-  color: #945840;
+  color: #93786E;
   width: 100%;
-  /* Ensure it takes full width */
   text-align: center;
-  /* Center the additional text */
   margin-top: 10px;
-  /* Adds some space above the text */
   margin-right: 400px;
 }
-
 
 .line-divider-three {
   width: 100%;
   margin: 20px auto;
-  /* Centers the line and gives it some space from the content */
   border: 0;
   margin-top: 40px;
   border-top: 1px solid #DED4C2;
-  /* Brown color matching your theme */
 }
 
-
+/* Third Project */
 .third-project {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 100%;
   margin: 20px auto;
   flex-wrap: wrap;
+  gap: 20px;  /* Ensure there is space between the items */
 }
 
-
-.third-project {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin: 20px auto;
-  flex-wrap: wrap;
-}
-
-
+/* Number style for the third project */
 .third-project .number-three {
   font-size: 70px;
   color: #93786E;
@@ -405,17 +327,16 @@ h3 {
   font-weight: 100;
 }
 
-
+/* Text style for the third project */
 .third-project .text-three {
   font-size: 50px;
   font-family: "Space Grotesk";
   font-weight: 100;
   color: #5D3A2C;
-  margin-right: 400px;
-  /* Ensure text-three is aligned properly */
+  margin-right: 530px;
 }
 
-
+/* Right-aligned number for the third project */
 .third-project .number-right-three {
   font-size: 30px;
   font-family: "Space Grotesk";
@@ -423,38 +344,25 @@ h3 {
   font-weight: 50;
 }
 
-
+/* Additional text for the third project */
 .third-project .additional-text-three {
   font-size: 15px;
   font-family: "Courier Prime";
-  /* Example font for the additional text */
-  color: #945840;
+  color: #93786E;
   width: 100%;
-  /* Ensure it takes full width */
   text-align: center;
-  /* Center the additional text */
   margin-top: 10px;
-  /* Adds some space above the text */
-  margin-right: 400px;
-  /* Ensures consistent margin with other projects */
+  margin-right: 145px; 
 }
-
 
 /* Divider line for third project */
 .line-divider-three {
-  width: 80%;
+  width: 100%;
   margin: 20px auto;
   border: 0;
   margin-top: 40px;
   border-top: 1px solid #DED4C2;
-  /* Brown color matching your theme */
 }
-
-
-
-
-
-
 
 
 /* For very small screens */
@@ -463,25 +371,19 @@ h3 {
     font-size: 40px;
   }
 
-
   .first-project .text {
     font-size: 30px;
   }
-
 
   .first-project .number-right {
     font-size: 20px;
   }
 
-
   .first-project .additional-text {
     font-size: 12px;
-    /* Adjust further for smaller screens */
   }
-
 
   .rectangle {
     font-size: 50px;
-    /* Make text smaller for very small screens */
   }
 }
