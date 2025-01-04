@@ -1,4 +1,8 @@
-/* General Body Styling */
+/* Makes scrolling smooth */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   margin: 0;
@@ -39,6 +43,27 @@ ul.project-header {
   margin: 16px;
   display: flex;
   color: #5D3A2C;
+}
+
+/* Remove the underline and change link color */
+.nav-container a {
+  text-decoration: none;  /* Remove underline */
+  color: #5D3A2C;         /* Set color to brownish */
+}
+
+/* Hover effect for nav links */
+.nav-container a:hover {
+  color: #FF5733;          /* Change color to orange on hover */
+}
+
+/* For project-header links (inside circles) */
+ul.project-header li a {
+  color: #5D3A2C;          /* Color for the links inside the circles */
+}
+
+/* Hover effect for links inside the circles */
+ul.project-header li a:hover {
+  color: #F7F1DF;          /* Change text color on hover (light cream color) */
 }
 
 /* Add circles around navbar items with an outline */
