@@ -42,7 +42,7 @@ ul.project-header {
   padding: 16px;
   margin: 16px;
   display: flex;
-  color: #5D3A2C;
+  /* color: #5D3A2C; */
 }
 
 /* Remove the underline and change link color */
@@ -53,17 +53,17 @@ ul.project-header {
 
 /* Hover effect for nav links */
 .nav-container a:hover {
-  color: #FF5733;          /* Change color to orange on hover */
-}
+  color: #452f2a;         
+} 
 
 /* For project-header links (inside circles) */
 ul.project-header li a {
-  color: #5D3A2C;          /* Color for the links inside the circles */
-}
+  color: #5D3A2C;         
+} 
 
 /* Hover effect for links inside the circles */
 ul.project-header li a:hover {
-  color: #F7F1DF;          /* Change text color on hover (light cream color) */
+  color: #5D3A2C;          /* Change text color on hover */
 }
 
 /* Add circles around navbar items with an outline */
@@ -86,8 +86,6 @@ ul.project-header li {
 
 /* Optional hover effect */
 ul.project-header li:hover {
-  background-color: #5D3A2C; /* Change background color on hover */
-  color: #F7F1DF; /* Change text color on hover */
   transform: scale(1.1); /* Slightly grow on hover */
 }
 
@@ -214,7 +212,7 @@ h3 {
   height: 123px;
   background-color: #D4B694;
   border-radius: 40px;
-  margin-top: 250px;
+  margin-top: 230px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -412,92 +410,64 @@ h3 {
   border-top: 1px solid #DED4C2;
 }
 
-/* Links Container (Gmail and LinkedIn Icons) */
-.links-container {
-  display: inline-flex; /* Make icons appear right next to each other */
-  justify-content: center; /* Ensure the icons are centered horizontally */
-  align-items: center; /* Vertically align the icons */
-  gap: 0; /* Ensure no gap between icons */
-  margin: 20px auto; /* Optional, to center the container horizontally */
-}
-
-.link-one, .link-two {
-  margin: 0; /* Remove any margin */
-  padding: 0; /* Remove padding if any */
-}
-
-.link-one img, .link-two img {
-  width: 80px; /* Ensure both icons have the same size */
-  height: 40px; /* Match the height with width */
-  object-fit: contain; /* Ensure icons don't stretch */
-}
-
-.links-container a {
-  position: relative; /* Allow z-index to work */
-  z-index: 10; /* Make sure links are on top */
-}
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .link-one img, .link-two img {
-    width: 30px; /* Make the icons smaller on mobile */
-    height: 30px; /* Ensure height matches width */
-  }
-}
-
-@media (max-width: 480px) {
-  .link-one img, .link-two img {
-    width: 25px; /* Even smaller icons on very small screens */
-    height: 25px; /* Match height with width */
-  }
-}
-
-
-
-/* Connect Section - Adjusting for responsiveness */
 .connect {
-  font-family: "Courier Prime";
+  font-size: 40px;
   color: #5D3A2C;
-  font-size: 50px;
-  font-weight: 100;
-  margin-left: 300px;
-  margin-top: 50px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  text-align: center;      /* Ensure text is centered inside the <p> */
+  width: 100%;             /* Ensure the container takes full width */
+  margin: 0;               /* Reset any margin */
+  padding: 0;              /* Reset any padding */
+  margin-top: 80px;
 }
 
+.connect p {
+  margin: 0; /* Remove default margin from <p> */
+}
+
+.links-container {
+  display: flex;             /* Enable flexbox layout */
+  justify-content: center;   /* Center the icons horizontally */
+  align-items: center;       /* Center the icons vertically */
+  gap: 30px;                 /* Add space between the icons */
+  margin-top: 30px;          /* Space above the icons */
+  width: 100%;               /* Ensure container takes full width of the parent */
+}
+
+.links-container .gmail-container,
+.links-container .linkedin-container {
+  display: flex;             /* Make these divs use flexbox, but not inline-flex */
+  justify-content: center;   /* Center content inside each div */
+  align-items: center;       /* Center the icons vertically inside each div */
+}
+
+.links-container a img {
+  width: 50px;  /* Set the width of the icons */
+  height: 50px; /* Set the height of the icons */
+  transition: transform 0.3s ease;  /* Add a smooth transition effect for hover */
+}
+
+.links-container a:hover img {
+  transform: scale(1.1);  /* Slightly enlarge icons on hover */
+}
+
+
+/* For tablets or medium screens */
 @media (max-width: 768px) {
   .connect {
-    font-size: 30px; /* Smaller font size on mobile */
-    text-align: center; /* Center the text */
-    margin-left: 0; /* Reset margin */
-    margin-top: 30px; /* Reduce the margin */
+    font-size: 30px;         /* Smaller font size for tablets */
+    margin-left: 50px;       /* Smaller left margin */
   }
 }
 
+/* For small screens (phones) */
 @media (max-width: 480px) {
   .connect {
-    font-size: 25px; /* Even smaller font size for very small screens */
-    margin-top: 20px; /* Further reduce margin */
-  }
-}
-
-.link-two {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin-left: 300px;
-}
-
-@media (max-width: 768px) {
-  .link-two {
-    flex-direction: column; /* Stack items vertically */
-    margin-left: 0; /* Reset margin on smaller screens */
-    align-items: center; /* Center items */
-    width: 50%; /* Restrict width to 50% of the container */
-    padding: 10px; /* Add some padding to avoid the edges */
-  }
-
-  .link-two a {
-    font-size: 16px; /* Adjust font size for smaller screens */
-    margin-bottom: 5px; /* Small amount of space between the links */
+    font-size: 25px;         /* Even smaller font size for phones */
+    margin-left: 20px;       /* Further reduce left margin */
+    margin-right: 20px;      /* Add some space on the right side for better alignment */
   }
 }
 
