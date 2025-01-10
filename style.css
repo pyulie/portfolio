@@ -27,7 +27,7 @@ ul {
 ul.name-header {
   list-style: none;
   padding: 10px;
-  margin: 24px;
+  margin-left: 60px;
   color: #5D3A2C;
 }
 
@@ -39,8 +39,7 @@ ul.name-header a {
 ul.project-header {
   text-align: right;
   list-style: none;
-  padding: 16px;
-  margin: 16px;
+  margin-right: 60px;
   display: flex;
   /* color: #5D3A2C; */
 }
@@ -70,7 +69,7 @@ ul.project-header li a:hover {
 ul.project-header li {
   list-style: none;
   padding: 0 8px; /* Adjust horizontal padding to fit text */
-  margin-left: 16px; /* Space between the items */
+  margin-left: 12px; /* Space between the items */
   border-radius: 100px; /* Fully rounded corners with a radius of 100px */
   color: #5D3A2C; /* Text color inside the circle */
   background-color: transparent; /* Transparent background */
@@ -81,7 +80,7 @@ ul.project-header li {
   font-size: 10px; /* Smaller font size to fit the text in the circle */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
   height: 30px; /* Circle height */
-  width: 75px; /* Circle width */
+  width: 62px; /* Circle width */
 }
 
 /* Optional hover effect */
@@ -99,13 +98,14 @@ ul.project-header li:hover {
 }
 
 h1 {
-  margin: 16px;
+  font-size: 60px;
+  margin: 10px;
   padding: 60px;
   color: #5D3A2C;
   font-family: "Srisakdi";
-  font-size: 40px;
   font-weight: 100;
   margin-top: -10px;
+  
 }
 
 h2 {
