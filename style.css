@@ -20,8 +20,7 @@ body {
 
 ul {
   list-style: none;
-  padding: 24px;
-  margin: 0;
+  margin-top: 26px;
 }
 
 ul.name-header {
@@ -98,7 +97,7 @@ ul.project-header li:hover {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 55px;
   margin: 10px;
   padding: 60px;
   color: #5D3A2C;
@@ -208,7 +207,7 @@ h3 {
 /* Rectangle Styling */
 .rectangle {
   width: 100%;
-  max-width: 1150px;
+  max-width: 1300px;
   height: 123px;
   background-color: #D4B694;
   border-radius: 40px;
@@ -226,7 +225,7 @@ h3 {
 
 .rectangle p {
   display: flex;
-  animation: scrollText 20s linear infinite;
+  animation: scrollText 25s linear infinite;
   margin: 0;
   padding: 0;
 }
@@ -411,7 +410,7 @@ h3 {
 }
 
 .connect {
-  font-size: 40px;
+  font-size: 50px;
   color: #5D3A2C;
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -421,17 +420,20 @@ h3 {
   margin: 0;               /* Reset any margin */
   padding: 0;              /* Reset any padding */
   margin-top: 80px;
+  font-family: "Space Grotesk";
+  font-weight: 100;
 }
 
 .connect p {
   margin: 0; /* Remove default margin from <p> */
+  margin-bottom: 50px;
 }
 
 .links-container {
   display: flex;             /* Enable flexbox layout */
   justify-content: center;   /* Center the icons horizontally */
   align-items: center;       /* Center the icons vertically */
-  gap: 30px;                 /* Add space between the icons */
+  gap: 40px;                 /* Add space between the icons */
   margin-top: 30px;          /* Space above the icons */
   width: 100%;               /* Ensure container takes full width of the parent */
 }
@@ -444,8 +446,8 @@ h3 {
 }
 
 .links-container a img {
-  width: 50px;  /* Set the width of the icons */
-  height: 50px; /* Set the height of the icons */
+  width: 80px;  /* Set the width of the icons */
+  height: 85px; /* Set the height of the icons */
   transition: transform 0.3s ease;  /* Add a smooth transition effect for hover */
 }
 
