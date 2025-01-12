@@ -1,0 +1,118 @@
+/* General body styles */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F1DF;
+  }
+  
+  /* Navigation Container */
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  ul {
+    list-style: none;
+    margin-top: 26px;
+  }
+  
+  ul.name-header {
+    list-style: none;
+    padding: 10px;
+    margin-left: 60px;
+    color: #5D3A2C;
+  }
+  
+  ul.name-header a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul.project-header {
+    text-align: right;
+    list-style: none;
+    margin-right: 60px;
+    display: flex;
+  }
+  
+  /* Remove the underline and change link color */
+  .nav-container a {
+    text-decoration: none;  /* Remove underline */
+    color: #5D3A2C;         /* Set color to brownish */
+  }
+  
+  /* Hover effect for nav links */
+  .nav-container a:hover {
+    color: #452f2a;         
+  } 
+  
+  /* For project-header links (inside circles) */
+  ul.project-header li a {
+    color: #5D3A2C;         
+  } 
+  
+  /* Hover effect for links inside the circles */
+  ul.project-header li a:hover {
+    color: #5D3A2C;          /* Change text color on hover */
+  }
+  
+  /* Add circles around navbar items with an outline */
+  ul.project-header li {
+    list-style: none;
+    padding: 0 8px; /* Adjust horizontal padding to fit text */
+    margin-left: 12px; /* Space between the items */
+    border-radius: 100px; /* Fully rounded corners with a radius of 100px */
+    color: #5D3A2C; /* Text color inside the circle */
+    background-color: transparent; /* Transparent background */
+    border: 1px solid #5D3A2C; /* Border with the desired color */
+    display: inline-flex; /* Use flexbox to align items properly */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    font-size: 15px; /* Smaller font size to fit the text in the circle */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    height: 30px; /* Circle height */
+    width: 62px; /* Circle width */
+  }
+  
+  /* Optional hover effect */
+  ul.project-header li:hover {
+    transform: scale(1.1); /* Slightly grow on hover */
+  }
+  
+  /* Adjusting the title style */
+  h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 10px;
+    padding: 60px;
+    color: #5D3A2C;
+    font-family: "Space Grotesk";
+    margin-top: 20px;
+  }
+
+  h2{
+    font-size: 12px;
+    font-family: "Courier Prime";
+    color: #9F8075;
+    font-weight: 100;
+    margin-left: 72px;
+    margin-top: -52px;
+  }
+
+  h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Space Grotesk";
+    color:#5D3A2C;
+    padding: 30px;
+    margin-left: 42px;
+    margin-top: 50px;
+  }
+
+  .background-p {
+    width: 80;
+  }
+  

@@ -455,6 +455,14 @@ h3 {
   transform: scale(1.1);  /* Slightly enlarge icons on hover */
 }
 
+.footer{
+  float: right;
+  color:#5D3A2C;
+  margin-right: 10px;
+  margin-top: 50px;
+  font: "Courier Prime";
+}
+
 
 /* For tablets or medium screens */
 @media (max-width: 768px) {
