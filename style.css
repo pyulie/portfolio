@@ -415,77 +415,70 @@ h3 {
   border-top: 1px solid #DED4C2;
 }
 
+/* Connect section */
 .connect {
-  font-size: 50px;
+  font-size: 30px;
   color: #5D3A2C;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center;     /* Center vertically */
-  text-align: center;      /* Ensure text is centered inside the <p> */
-  width: 100%;             /* Ensure the container takes full width */
-  margin: 0;               /* Reset any margin */
-  padding: 0;              /* Reset any padding */
-  margin-top: 80px;
   font-family: "Space Grotesk";
   font-weight: 100;
+  margin-top: 80px;          /* Space above "Connect" */
+  margin-bottom: 10px;       /* Space below "Connect" */
+  text-align: right;         /* Align text to the right */
+  width: 100%;               /* Ensure it takes the full width */
 }
 
-.connect p {
-  margin: 0; /* Remove default margin from <p> */
-  margin-bottom: 50px;
-}
-
+/* Links Container */
 .links-container {
-  display: flex;             /* Enable flexbox layout */
-  justify-content: center;   /* Center the icons horizontally */
-  align-items: center;       /* Center the icons vertically */
-  gap: 40px;                 /* Add space between the icons */
-  margin-top: 30px;          /* Space above the icons */
-  width: 100%;               /* Ensure container takes full width of the parent */
+  display: flex;
+  gap: 12px;                     /* Space between icons */
+  justify-content: flex-end;     /* Align icons to the right */
+  margin-top: 10px;              /* Space between "Connect" and links */
+  width: 100%;                   /* Full width for positioning */
 }
 
 .links-container .gmail-container,
 .links-container .linkedin-container {
-  display: flex;             /* Make these divs use flexbox, but not inline-flex */
-  justify-content: center;   /* Center content inside each div */
-  align-items: center;       /* Center the icons vertically inside each div */
+  display: flex;
+  justify-content: center;       /* Center icons horizontally */
+  align-items: center;           /* Center icons vertically */
 }
 
 .links-container a img {
-  width: 80px;  /* Set the width of the icons */
-  height: 85px; /* Set the height of the icons */
-  transition: transform 0.3s ease;  /* Add a smooth transition effect for hover */
+  width: 35px;                   /* Icon width */
+  height: 40px;                  /* Icon height */
+  transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
 .links-container a:hover img {
-  transform: scale(1.1);  /* Slightly enlarge icons on hover */
+  transform: scale(1.1);         /* Slightly enlarge icons on hover */
 }
 
-.footer{
-  float: right;
-  color:#5D3A2C;
-  margin-right: 10px;
-  margin-top: 50px;
-  font: "Courier Prime";
-}
-
-
-/* For tablets or medium screens */
+/* Responsiveness for Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .connect {
-    font-size: 30px;         /* Smaller font size for tablets */
-    margin-left: 50px;       /* Smaller left margin */
+    font-size: 25px;              /* Smaller font size on tablets */
+    margin-top: 60px;             /* Reduce space above "Connect" */
+  }
+
+  .links-container {
+    gap: 20px;                    /* More space between icons */
   }
 }
 
-/* For small screens (phones) */
+/* Responsiveness for Small Screens (max-width: 480px) */
 @media (max-width: 480px) {
   .connect {
-    font-size: 25px;         /* Even smaller font size for phones */
-    margin-left: 20px;       /* Further reduce left margin */
-    margin-right: 20px;      /* Add some space on the right side for better alignment */
+    font-size: 20px;              /* Even smaller font size on small screens */
+    margin-top: 50px;             /* Reduce space further */
+  }
+
+  .links-container {
+    gap: 10px;                    /* Adjust gap for small screens */
   }
 }
+
+
+
 
 
 /* For very small screens */
